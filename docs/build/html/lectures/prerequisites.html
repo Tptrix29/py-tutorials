@@ -1,0 +1,757 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Prerequisites &#8212; Python Tutorials v0.1 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+
+    <script src="../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../_static/documentation_options.js?v=d3792fb7"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lectures/prerequisites';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Get Started" href="get-started.html" />
+    <link rel="prev" title="Lecture Notes" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Python Tutorials v0.1 documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Lecture Notes</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get-started.html">Get Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basic-syntax.html">Basic Python Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="function-class.html">Function &amp; Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-man-vis.html">Data Manipulation and Visualization</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../assignments/index.html">Assignments</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/Tptrix29/py-tutorials" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/lectures/prerequisites.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Prerequisites</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-operating-system">About Operating System</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic">Basic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#microsoft-windows">Microsoft Windows</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#macos">macOS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#linux">Linux</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#android">Android</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ios">iOS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-bash-commands">Some Bash Commands</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-terminal">Shell &amp; Terminal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-commands-for-unix-based-systems">Shell commands for UNIX-based systems</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version-control-system">Version Control System</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#git-github">Git &amp; GitHub</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#git-commands">Git commands</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="prerequisites">
+<h1>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h1>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Please make sure you have read this part before starting the course.</p>
+</div>
+<section id="about-operating-system">
+<h2>About Operating System<a class="headerlink" href="#about-operating-system" title="Link to this heading">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are already familiar with operating systems, you can skip this section.</p>
+</div>
+<section id="basic">
+<h3>Basic<a class="headerlink" href="#basic" title="Link to this heading">#</a></h3>
+<p>An <strong>operating system</strong> (OS) is the fundamental software that manages all the hardware and other software on a computer. It serves as an intermediary between computer hardware and the user.
+It handles basic tasks such as:</p>
+<ol class="arabic simple">
+<li><p><strong>Managing Resources</strong>: The OS manages the computer’s memory, processor, disk space, and other resources, ensuring each program gets what it needs to run smoothly.</p></li>
+<li><p><strong>User Interface</strong>: The OS provides a user interface (UI), which can be graphical (GUI) like Windows and macOS, or command-line based like Linux. This allows users to interact with the computer through windows, icons, and menus or by typing commands.</p></li>
+<li><p><strong>Running Applications</strong>: The OS allows you to run multiple applications at the same time. It allocates the necessary resources and ensures that each application operates efficiently without interfering with others.</p></li>
+<li><p><strong>File Management</strong>: The OS organizes files on storage devices, allowing you to create, delete, move, and organize your data in a structured way.</p></li>
+<li><p><strong>Security and Access Control</strong>: The OS helps protect your computer by managing user permissions and access rights, ensuring that only authorized users can access certain files and applications.</p></li>
+</ol>
+<p>Common examples of operating systems include <em><strong>Microsoft Windows</strong></em>, <em><strong>macOS</strong></em>, <em><strong>Linux</strong></em>, <em><strong>Android</strong></em>, <em><strong>iOS</strong></em>.</p>
+</section>
+<section id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h3>
+<p>There are brief descriptions of some popular operating systems below:</p>
+<section id="microsoft-windows">
+<h4>Microsoft Windows<a class="headerlink" href="#microsoft-windows" title="Link to this heading">#</a></h4>
+<p>Microsoft Windows is one of the most widely used operating systems in the world. It offers a graphical user interface (GUI), making it user-friendly and accessible for beginners. Windows is known for its compatibility with a wide range of software and hardware, making it a popular choice for personal computers, business environments, and gaming.</p>
+</section>
+<section id="macos">
+<h4>macOS<a class="headerlink" href="#macos" title="Link to this heading">#</a></h4>
+<p>Developed by Apple Inc., macOS is the operating system used on Macintosh computers. Known for its sleek design, strong security features, and seamless integration with other Apple products like the iPhone and iPad, macOS is favored by creative professionals and users who value a polished, cohesive user experience.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Different chips are used in Macintosh computers. (<strong>Intel</strong> and <strong>Apple Silicon</strong>)</p>
+<p>Please check the chip type and select corresponding version when installing any software.</p>
+</div>
+</section>
+<section id="linux">
+<h4>Linux<a class="headerlink" href="#linux" title="Link to this heading">#</a></h4>
+<p>Linux is a family of open-source operating systems based on the Linux kernel. It is highly customizable and is known for its stability and security. There are many distributions (or “distros”) of Linux, such as Ubuntu, Fedora, and Debian, each with its unique features and user interfaces. Linux is popular among developers, system administrators, and users who prefer open-source software.</p>
+</section>
+<section id="android">
+<h4>Android<a class="headerlink" href="#android" title="Link to this heading">#</a></h4>
+<p>Android is an operating system designed primarily for touchscreen mobile devices such as smartphones and tablets. Developed by Google, Android is based on a modified version of the Linux kernel. It is known for its flexibility, wide range of applications available through the Google Play Store, and deep integration with Google’s services.</p>
+</section>
+<section id="ios">
+<h4>iOS<a class="headerlink" href="#ios" title="Link to this heading">#</a></h4>
+<p>iOS is the operating system for Apple’s mobile devices, including the iPhone and iPad. Known for its intuitive user interface and strong security, iOS offers a seamless experience across all Apple devices. It is highly optimized for performance and has a vast ecosystem of apps available through the Apple App Store.</p>
+</section>
+</section>
+</section>
+<section id="some-bash-commands">
+<h2>Some Bash Commands<a class="headerlink" href="#some-bash-commands" title="Link to this heading">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are already familiar with bash command in UNIX system, you can skip this section.</p>
+</div>
+<section id="shell-terminal">
+<h3>Shell &amp; Terminal<a class="headerlink" href="#shell-terminal" title="Link to this heading">#</a></h3>
+<p><strong>Shell</strong> is a command-line interface that allows users to interact with an operating system. It interprets commands entered by the user and executes them.
+<strong>Terminal</strong> is the window where the shell runs, displaying the command prompt and allowing users to type commands.</p>
+<p>In UNIX-base systems, popular shells include <strong>Bash</strong> (Bourne Again Shell), <strong>Zsh</strong> (Z Shell), and <strong>Fish</strong>.</p>
+<p>In Windows, <strong>Command Prompt</strong> and <strong>PowerShell</strong> are commonly used shells.</p>
+</section>
+<section id="shell-commands-for-unix-based-systems">
+<h3>Shell commands for UNIX-based systems<a class="headerlink" href="#shell-commands-for-unix-based-systems" title="Link to this heading">#</a></h3>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="c1"># Print the current working directory</span>
+<span class="nb">pwd</span>
+
+<span class="c1"># List files and directories in the current directory</span>
+ls
+
+<span class="c1"># List all files, including hidden files, in long format</span>
+ls<span class="w"> </span>-la
+
+<span class="c1"># Change to a different directory</span>
+<span class="c1"># Usage: cd &lt;directory-path&gt;</span>
+<span class="nb">cd</span><span class="w"> </span>/path/to/directory
+
+<span class="c1"># Create a new directory</span>
+<span class="c1"># Usage: mkdir &lt;directory-name&gt;</span>
+mkdir<span class="w"> </span>new_directory
+
+<span class="c1"># Remove a file</span>
+<span class="c1"># Usage: rm &lt;file-name&gt;</span>
+rm<span class="w"> </span>file.txt
+
+<span class="c1"># Remove a directory and its contents</span>
+<span class="c1"># Usage: rm -r &lt;directory-name&gt;</span>
+rm<span class="w"> </span>-r<span class="w"> </span>old_directory
+
+<span class="c1"># Copy a file</span>
+<span class="c1"># Usage: cp &lt;source&gt; &lt;destination&gt;</span>
+cp<span class="w"> </span>file.txt<span class="w"> </span>copy_of_file.txt
+
+<span class="c1"># Copy a directory and its contents</span>
+<span class="c1"># Usage: cp -r &lt;source-directory&gt; &lt;destination-directory&gt;</span>
+cp<span class="w"> </span>-r<span class="w"> </span>source_directory<span class="w"> </span>destination_directory
+
+<span class="c1"># Move or rename a file or directory</span>
+<span class="c1"># Usage: mv &lt;source&gt; &lt;destination&gt;</span>
+mv<span class="w"> </span>old_name.txt<span class="w"> </span>new_name.txt
+mv<span class="w"> </span>file.txt<span class="w"> </span>/new/path/file.txt
+
+<span class="c1"># Display the contents of a file</span>
+<span class="c1"># Usage: cat &lt;file-name&gt;</span>
+cat<span class="w"> </span>file.txt
+
+<span class="c1"># View the first 10 lines of a file</span>
+<span class="c1"># Usage: head &lt;file-name&gt;</span>
+head<span class="w"> </span>file.txt
+
+<span class="c1"># View the last 10 lines of a file</span>
+<span class="c1"># Usage: tail &lt;file-name&gt;</span>
+tail<span class="w"> </span>file.txt
+
+<span class="c1"># Search for a pattern in a file</span>
+<span class="c1"># Usage: grep &lt;pattern&gt; &lt;file-name&gt;</span>
+grep<span class="w"> </span><span class="s2">&quot;search_term&quot;</span><span class="w"> </span>file.txt
+
+<span class="c1"># Display the manual page for a command</span>
+<span class="c1"># Usage: man &lt;command&gt;</span>
+man<span class="w"> </span>ls
+
+<span class="c1"># Show disk usage of files and directories</span>
+<span class="c1"># Usage: du &lt;options&gt; &lt;directory&gt;</span>
+du<span class="w"> </span>-h
+
+<span class="c1"># Show free disk space</span>
+df<span class="w"> </span>-h
+
+<span class="c1"># Display running processes</span>
+ps
+
+<span class="c1"># Display running processes in a more detailed format</span>
+top
+
+<span class="c1"># Find files and directories</span>
+<span class="c1"># Usage: find &lt;path&gt; -name &lt;pattern&gt;</span>
+find<span class="w"> </span>/path/to/search<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;file_name_pattern&quot;</span>
+
+<span class="c1"># Download a file from the internet</span>
+<span class="c1"># Usage: wget &lt;url&gt;</span>
+wget<span class="w"> </span>http://example.com/file.txt
+
+<span class="c1"># Change file permissions</span>
+<span class="c1"># Usage: chmod &lt;permissions&gt; &lt;file-name&gt;</span>
+chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span>script.sh
+
+<span class="c1"># Change file ownership</span>
+<span class="c1"># Usage: chown &lt;owner&gt;:&lt;group&gt; &lt;file-name&gt;</span>
+chown<span class="w"> </span>user:group<span class="w"> </span>file.txt
+
+<span class="c1"># Create an empty file or update the timestamp of an existing file</span>
+<span class="c1"># Usage: touch &lt;file-name&gt;</span>
+touch<span class="w"> </span>newfile.txt
+
+<span class="c1"># Concatenate and display the contents of multiple files</span>
+<span class="c1"># Usage: cat &lt;file1&gt; &lt;file2&gt; &gt; &lt;output-file&gt;</span>
+cat<span class="w"> </span>file1.txt<span class="w"> </span>file2.txt<span class="w"> </span>&gt;<span class="w"> </span>combined.txt
+
+<span class="c1"># Show current user</span>
+whoami
+
+<span class="c1"># Show the system&#39;s current date and time</span>
+date
+
+<span class="c1"># Show the system&#39;s uptime and load average</span>
+uptime
+
+<span class="c1"># Display network configuration</span>
+ifconfig
+
+<span class="c1"># Show listening ports and open connections</span>
+netstat<span class="w"> </span>-tuln
+</pre></div>
+</div>
+</section>
+</section>
+<section id="version-control-system">
+<h2>Version Control System<a class="headerlink" href="#version-control-system" title="Link to this heading">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are already familiar with version control systems, you can skip this section.</p>
+</div>
+<p>A Version Control System (VCS) is a tool that helps software developers manage changes to their source code over time. It tracks every modification made to the codebase, allowing developers to collaborate more effectively and ensuring that the history of changes is preserved. Here are some key points about VCS: <strong>Tracking Changes, Collaboration</strong>, <strong>Backup and Restore</strong>, <strong>Branching and Merging</strong>. Popular VCS includes the following tools: <strong>Git</strong>, Subversion (SVN), Mercurial.</p>
+<section id="git-github">
+<h3>Git &amp; GitHub<a class="headerlink" href="#git-github" title="Link to this heading">#</a></h3>
+<p><strong>Git</strong> is a distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git allows developers to keep track of changes in their codebase, collaborate with others, and manage multiple versions of their projects.</p>
+<p><strong>GitHub</strong> is a web-based platform that uses Git for version control. It provides a collaborative environment for developers to host and review code, manage projects, and build software together. GitHub was founded in 2008 and has since become one of the largest code-hosting platforms in the world.</p>
+</section>
+<section id="git-commands">
+<h3>Git commands<a class="headerlink" href="#git-commands" title="Link to this heading">#</a></h3>
+<p><img alt="git-workflow" src="../_images/git-workflow.png" /></p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize a new Git repository</span>
+git<span class="w"> </span>init
+
+<span class="c1"># Clone an existing repository</span>
+<span class="c1"># Usage: git clone &lt;repository-url&gt;</span>
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/example/repo.git
+
+<span class="c1"># Stage changes for commit</span>
+<span class="c1"># Usage: git add &lt;file-name&gt; or git add .</span>
+git<span class="w"> </span>add<span class="w"> </span>file.txt
+git<span class="w"> </span>add<span class="w"> </span>.
+
+<span class="c1"># Commit staged changes with a message</span>
+<span class="c1"># Usage: git commit -m &quot;commit message&quot;</span>
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Initial commit&quot;</span>
+
+<span class="c1"># Show the working directory status</span>
+git<span class="w"> </span>status
+
+<span class="c1"># View the commit history</span>
+git<span class="w"> </span>log
+
+<span class="c1"># List all branches</span>
+git<span class="w"> </span>branch
+
+<span class="c1"># Create a new branch</span>
+<span class="c1"># Usage: git branch &lt;new-branch-name&gt;</span>
+git<span class="w"> </span>branch<span class="w"> </span>new-feature
+
+<span class="c1"># Switch to a different branch</span>
+<span class="c1"># Usage: git checkout &lt;branch-name&gt;</span>
+git<span class="w"> </span>checkout<span class="w"> </span>new-feature
+
+<span class="c1"># Create and switch to a new branch</span>
+<span class="c1"># Usage: git checkout -b &lt;new-branch-name&gt;</span>
+git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>another-feature
+
+<span class="c1"># Merge a branch into the current branch</span>
+<span class="c1"># Usage: git merge &lt;branch-name&gt;</span>
+git<span class="w"> </span>checkout<span class="w"> </span>main
+git<span class="w"> </span>merge<span class="w"> </span>new-feature
+
+<span class="c1"># Fetch changes from a remote repository and merge them into the current branch</span>
+<span class="c1"># Usage: git pull &lt;remote&gt; &lt;branch&gt;</span>
+git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>main
+
+<span class="c1"># Push local commits to a remote repository</span>
+<span class="c1"># Usage: git push &lt;remote&gt; &lt;branch&gt;</span>
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+
+<span class="c1"># Add a remote repository</span>
+<span class="c1"># Usage: git remote add &lt;name&gt; &lt;url&gt;</span>
+git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/example/repo.git
+
+<span class="c1"># List all remote repositories</span>
+git<span class="w"> </span>remote<span class="w"> </span>-v
+
+<span class="c1"># Fetch changes from a remote repository without merging</span>
+<span class="c1"># Usage: git fetch &lt;remote&gt;</span>
+git<span class="w"> </span>fetch<span class="w"> </span>origin
+
+<span class="c1"># Show differences between commits, branches, or the working directory and the staging area</span>
+<span class="c1"># Usage: git diff or git diff &lt;commit1&gt; &lt;commit2&gt;</span>
+git<span class="w"> </span>diff
+git<span class="w"> </span>diff<span class="w"> </span>HEAD~1<span class="w"> </span>HEAD
+
+<span class="c1"># Reset the current HEAD to a specified state</span>
+<span class="c1"># Usage: git reset &lt;commit&gt; or git reset HEAD &lt;file&gt;</span>
+git<span class="w"> </span>reset<span class="w"> </span>HEAD~1
+git<span class="w"> </span>reset<span class="w"> </span>HEAD<span class="w"> </span>file.txt
+</pre></div>
+</div>
+<p><img alt="git-workflow" src="../_images/git-ops.png" /></p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Lecture Notes</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="get-started.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Get Started</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-operating-system">About Operating System</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic">Basic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#microsoft-windows">Microsoft Windows</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#macos">macOS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#linux">Linux</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#android">Android</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ios">iOS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-bash-commands">Some Bash Commands</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-terminal">Shell &amp; Terminal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-commands-for-unix-based-systems">Shell commands for UNIX-based systems</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#version-control-system">Version Control System</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#git-github">Git &amp; GitHub</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#git-commands">Git commands</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Tptrix29
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Tptrix29.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -6,7 +6,8 @@ Lecture Notes
    :maxdepth: 2
    :caption: Contents
 
-   configuration.md
+   prerequisites.md
+   get-started.md
    basic-syntax.ipynb
    function-class.ipynb
    data-man-vis.ipynb

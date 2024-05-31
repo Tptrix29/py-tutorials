@@ -43,13 +43,11 @@
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'lectures/configuration';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lectures/get-started';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Basic Python Syntax" href="basic-syntax.html" />
-    <link rel="prev" title="Lecture Notes" href="index.html" />
+    <link rel="prev" title="Prerequisites" href="prerequisites.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -154,6 +152,7 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Lecture Notes</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="prerequisites.html">Prerequisites</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Get Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="basic-syntax.html">Basic Python Syntax</a></li>
 <li class="toctree-l2"><a class="reference internal" href="function-class.html">Function &amp; Class</a></li>
@@ -230,7 +229,7 @@
       
       
       
-      <li><a href="../_sources/lectures/configuration.md" target="_blank"
+      <li><a href="../_sources/lectures/get-started.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -324,21 +323,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#about-operating-system">About Operating System</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-bash-commands">Simple Bash Commands</a></li>
-</ul>
-</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-python">Classical Python</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-interpreter-installation-latest-version">Basic Interpreter Installation (Latest Version)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-interpreter-installation-latest">Basic Interpreter Installation (Latest)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#package-manager">Package Manager</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#virtual-environment">Virtual Environment</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conda-python">Conda Python</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conda">Conda</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda">Anaconda</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#miniconda">Miniconda</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mamba">Mamba</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ide">IDE</a><ul class="nav section-nav flex-column">
@@ -365,68 +360,145 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="get-started">
 <h1>Get Started<a class="headerlink" href="#get-started" title="Link to this heading">#</a></h1>
-<section id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Please make sure you have read this part before starting the course.</p>
-</div>
-<section id="about-operating-system">
-<h3>About Operating System<a class="headerlink" href="#about-operating-system" title="Link to this heading">#</a></h3>
-<p>Test <code class="docutils literal notranslate"><span class="pre">Windows</span></code>, <code class="docutils literal notranslate"><span class="pre">Linux</span></code>, <code class="docutils literal notranslate"><span class="pre">MacOS</span></code></p>
-<p>Math <span class="math notranslate nohighlight">\(X\)</span></p>
-<div class="math notranslate nohighlight">
-\[
-E = mc^2
-\]</div>
-</section>
-<section id="simple-bash-commands">
-<h3>Simple Bash Commands<a class="headerlink" href="#simple-bash-commands" title="Link to this heading">#</a></h3>
-</section>
-</section>
 <section id="classical-python">
 <h2>Classical Python<a class="headerlink" href="#classical-python" title="Link to this heading">#</a></h2>
-<section id="basic-interpreter-installation-latest-version">
-<h3>Basic Interpreter Installation (Latest Version)<a class="headerlink" href="#basic-interpreter-installation-latest-version" title="Link to this heading">#</a></h3>
+<section id="basic-interpreter-installation-latest">
+<h3>Basic Interpreter Installation (Latest)<a class="headerlink" href="#basic-interpreter-installation-latest" title="Link to this heading">#</a></h3>
+<p>To get started with Python, you’ll need to install the Python interpreter. Follow these steps:</p>
+<ol class="arabic simple">
+<li><p>Visit the official <a class="reference external" href="https://www.python.org/downloads/">Python website</a>.</p></li>
+<li><p>Download the latest version suitable for your operating system (Windows, macOS, or Linux).</p></li>
+<li><p>Run the installer and follow the instructions. Ensure that you check the option to add Python to your system PATH.</p></li>
+</ol>
 </section>
 <section id="package-manager">
 <h3>Package Manager<a class="headerlink" href="#package-manager" title="Link to this heading">#</a></h3>
+<p>Python uses <code class="docutils literal notranslate"><span class="pre">pip</span></code> as its <strong>package manager</strong>, which is included with Python installations.</p>
+<p>You can install new packages using:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>package-name
+</pre></div>
+</div>
+<p>To upgrade a package, use:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>package-name
+</pre></div>
+</div>
+<p>To list installed packages, use:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>list
+</pre></div>
+</div>
 </section>
 <section id="virtual-environment">
 <h3>Virtual Environment<a class="headerlink" href="#virtual-environment" title="Link to this heading">#</a></h3>
+<p>Virtual environments are crucial for <strong>managing dependencies</strong> in different projects.</p>
+<p>To create a virtual environment:</p>
+<ol class="arabic">
+<li><p>Navigate to your project directory.</p></li>
+<li><p>Run the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
+</pre></div>
+</div>
+</li>
+<li><p>Activate the virtual environment:</p>
+<ul class="simple">
+<li><p>On Windows: <code class="docutils literal notranslate"><span class="pre">venv\Scripts\activate</span></code></p></li>
+<li><p>On macOS/Linux: <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">venv/bin/activate</span></code></p></li>
+</ul>
+</li>
+</ol>
+<p>To deactivate, simply run <code class="docutils literal notranslate"><span class="pre">deactivate</span></code>.</p>
 </section>
 </section>
-<section id="conda-python">
-<h2>Conda Python<a class="headerlink" href="#conda-python" title="Link to this heading">#</a></h2>
+<section id="conda">
+<h2>Conda<a class="headerlink" href="#conda" title="Link to this heading">#</a></h2>
 <section id="anaconda">
 <h3>Anaconda<a class="headerlink" href="#anaconda" title="Link to this heading">#</a></h3>
+<p>Anaconda is a distribution of Python that includes many pre-installed packages and tools for data science and machine learning:</p>
+<ol class="arabic simple">
+<li><p>Download the installer from the <a class="reference external" href="https://www.anaconda.com/">Anaconda website</a>.</p></li>
+<li><p>Run the installer and follow the instructions.</p></li>
+<li><p>Launch Anaconda Navigator to manage environments and packages visually.</p></li>
+</ol>
 </section>
 <section id="miniconda">
 <h3>Miniconda<a class="headerlink" href="#miniconda" title="Link to this heading">#</a></h3>
+<p>Miniconda is a <strong>lighter version</strong> of Anaconda with just the essential packages.</p>
+<p>To install Miniconda:</p>
+<ol class="arabic simple">
+<li><p>Download the installer from the <a class="reference external" href="https://docs.anaconda.com/free/miniconda/miniconda-install/">Miniconda website</a>.</p></li>
+<li><p>Follow the installation instructions.</p></li>
+<li><p>Use the <code class="docutils literal notranslate"><span class="pre">conda</span></code> command to manage the package environment.</p></li>
+</ol>
 </section>
 <section id="mamba">
 <h3>Mamba<a class="headerlink" href="#mamba" title="Link to this heading">#</a></h3>
+<p>Mamba is a fast, robust, and cross-platform package manager for Conda.</p>
+<p>To install Mamba in your Conda environment:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>mamba<span class="w"> </span>-c<span class="w"> </span>conda-forge
+</pre></div>
+</div>
+<p>You can then use Mamba similarly to Conda for managing packages:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>install<span class="w"> </span>package-name
+</pre></div>
+</div>
+</section>
+<section id="example">
+<h3>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h3>
+<blockquote>
+<div><p>Use conda to create a customized environment for the project aiming at data analysis.</p>
+</div></blockquote>
 </section>
 </section>
 <section id="ide">
 <h2>IDE<a class="headerlink" href="#ide" title="Link to this heading">#</a></h2>
 <section id="pycharm">
 <h3>PyCharm<a class="headerlink" href="#pycharm" title="Link to this heading">#</a></h3>
+<p>PyCharm is a powerful IDE for Python development:</p>
+<ol class="arabic simple">
+<li><p>Download and install PyCharm from the <a class="reference external" href="https://www.jetbrains.com/pycharm/download/">JetBrains website</a>.</p></li>
+<li><p>Open PyCharm and configure it for your Python interpreter.</p></li>
+<li><p>Explore features like intelligent code completion, debugging, and version control integration.</p></li>
+</ol>
 </section>
 <section id="visual-studio-code">
 <h3>Visual Studio Code<a class="headerlink" href="#visual-studio-code" title="Link to this heading">#</a></h3>
+<p>Visual Studio Code (VS Code) is a lightweight, versatile editor with excellent Python support:</p>
+<ol class="arabic simple">
+<li><p>Download and install VS Code from the <a class="reference external" href="https://code.visualstudio.com/">official website</a>.</p></li>
+<li><p>Install the Python extension from the Extensions marketplace.</p></li>
+<li><p>Configure the Python interpreter and explore features like IntelliSense, debugging, and integrated terminal.</p></li>
+</ol>
 </section>
 </section>
 <section id="jupyter-notebook">
 <h2>Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Link to this heading">#</a></h2>
 <section id="installation">
 <h3>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h3>
+<p>Jupyter Notebooks are interactive documents for code, text, and visualizations. To install Jupyter Notebook:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>notebook
+</pre></div>
+</div>
+<p>Or, if you are using Conda:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>notebook
+</pre></div>
+</div>
 </section>
 <section id="interactive-interface">
 <h3>Interactive Interface<a class="headerlink" href="#interactive-interface" title="Link to this heading">#</a></h3>
+<p>To start the Jupyter Notebook server, run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter<span class="w"> </span>notebook
+</pre></div>
+</div>
+<p>This will open the Jupyter interface in your web browser, where you can create and manage notebooks.</p>
 </section>
 <section id="hinterland">
 <h3>Hinterland<a class="headerlink" href="#hinterland" title="Link to this heading">#</a></h3>
+<p>Hinterland provides code completion for Jupyter Notebooks.
+To install Hinterland:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>jupyter_contrib_nbextensions
+jupyter<span class="w"> </span>contrib<span class="w"> </span>nbextension<span class="w"> </span>install<span class="w"> </span>--user
+</pre></div>
+</div>
+<p>Enable Hinterland through the Jupyter Nbextensions tab in the notebook interface.</p>
 </section>
 </section>
 </section>
@@ -443,12 +515,12 @@ E = mc^2
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="index.html"
+       href="prerequisites.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Lecture Notes</p>
+        <p class="prev-next-title">Prerequisites</p>
       </div>
     </a>
     <a class="right-next"
@@ -476,21 +548,17 @@ E = mc^2
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#about-operating-system">About Operating System</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-bash-commands">Simple Bash Commands</a></li>
-</ul>
-</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-python">Classical Python</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-interpreter-installation-latest-version">Basic Interpreter Installation (Latest Version)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-interpreter-installation-latest">Basic Interpreter Installation (Latest)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#package-manager">Package Manager</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#virtual-environment">Virtual Environment</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conda-python">Conda Python</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conda">Conda</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda">Anaconda</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#miniconda">Miniconda</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mamba">Mamba</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ide">IDE</a><ul class="nav section-nav flex-column">
