@@ -1,6 +1,4 @@
 # Get Started
-
-
 ## Prerequisites
 ```{important}
 Please make sure you have read this part before starting the course.
@@ -9,6 +7,11 @@ Please make sure you have read this part before starting the course.
 Test `Windows`, `Linux`, `MacOS`
 
 Math $X$
+
+$$
+E = mc^2
+$$
+
 ### Simple Bash Commands
 
 
@@ -38,9 +41,4 @@ Math $X$
 ### Interactive Interface
 
 ### Hinterland
-
-
-$$
-X_1, X_2, \ldots, X_n \sim \text{IID}(\mu, \sigma^2)
-$$
 

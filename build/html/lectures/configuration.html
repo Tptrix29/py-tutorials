@@ -43,6 +43,8 @@
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'lectures/configuration';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -361,7 +363,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="get-started">
+  <section class="tex2jax_ignore mathjax_ignore" id="get-started">
 <h1>Get Started<a class="headerlink" href="#get-started" title="Link to this heading">#</a></h1>
 <section id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
@@ -372,7 +374,11 @@ document.write(`
 <section id="about-operating-system">
 <h3>About Operating System<a class="headerlink" href="#about-operating-system" title="Link to this heading">#</a></h3>
 <p>Test <code class="docutils literal notranslate"><span class="pre">Windows</span></code>, <code class="docutils literal notranslate"><span class="pre">Linux</span></code>, <code class="docutils literal notranslate"><span class="pre">MacOS</span></code></p>
-<p>Math $X$</p>
+<p>Math <span class="math notranslate nohighlight">\(X\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+E = mc^2
+\]</div>
 </section>
 <section id="simple-bash-commands">
 <h3>Simple Bash Commands<a class="headerlink" href="#simple-bash-commands" title="Link to this heading">#</a></h3>
@@ -421,9 +427,6 @@ document.write(`
 </section>
 <section id="hinterland">
 <h3>Hinterland<a class="headerlink" href="#hinterland" title="Link to this heading">#</a></h3>
-<p>$$
-X_1, X_2, \ldots, X_n \sim \text{IID}(\mu, \sigma^2)
-$$</p>
 </section>
 </section>
 </section>

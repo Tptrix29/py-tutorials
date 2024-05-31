@@ -41,6 +41,11 @@ extensions = [
     # 'recommonmark',
 ]
 
+myst_enable_extensions = [
+    "dollarmath",
+]
+
+myst_dmath_double_inline = True
 
 # Exclude build directory and Jupyter backup files:
 exclude_patterns = ['_build', '**.ipynb_checkpoints']
