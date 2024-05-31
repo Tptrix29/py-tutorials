@@ -2,3 +2,4 @@ nbsphinx
 sphinx_book_theme
 myst_parser
 sphinx_rtd_theme
+sphinx_markdown_tables
