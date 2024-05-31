@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Python Tutorials'
-copyright = '2024, Pei Tian'
-author = 'Pei Tian'
+copyright = '2024, Tptrix29'
+author = 'Tptrix29'
 
 # The full version, including alpha/beta/rc tags
 release = 'v0.1'
@@ -81,7 +81,7 @@ html_theme = 'sphinx_book_theme'
 
 
 html_theme_options = {
-    "repository_url": "https://github.com/Tptrix29/test",
+    "repository_url": "https://github.com/Tptrix29/py-tutorials",
     "use_repository_button": True,
     "show_navbar_depth": 2,
     "max_navbar_depth": 4,

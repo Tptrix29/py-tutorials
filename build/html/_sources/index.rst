@@ -2,23 +2,18 @@
    sphinx-quickstart on Fri May 31 08:13:58 2024.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
+.. index.rst
 
 Welcome to Python Tutorials documentation!
 ============================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Topics:
+   :caption: Contents
+   :hidden:
 
-   lectures/configuration.md
-   lectures/basic-syntax.ipynb
-   lectures/function-class.ipynb
-   lectures/data-man-vis.ipynb
-
-   assignments/environment-setup.ipynb
-   assignments/combo-game.ipynb
-   assignments/wrapping-practice.ipynb
-   assignments/data-project.ipynb
+   lectures/index
+   assignments/index
 
 Indices and tables
 ==================
