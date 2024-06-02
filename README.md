@@ -1,4 +1,5 @@
 # Python Tutorial
+[Documents](https://py-tutorials.readthedocs.io/en/latest/)
 ## Contents
 1. Prerequisites
 2. Getting Started - Assignment 0
