@@ -301,7 +301,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -317,6 +319,18 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Problem-Description">Problem Description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Objectives">Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Deliverables">Deliverables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Example">Example</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -328,6 +342,58 @@ document.write(`
                   
   <section id="Assignment-1---Combo-Game">
 <h1>Assignment 1 - Combo Game<a class="headerlink" href="#Assignment-1---Combo-Game" title="Link to this heading">#</a></h1>
+<section id="Problem-Description">
+<h2>Problem Description<a class="headerlink" href="#Problem-Description" title="Link to this heading">#</a></h2>
+<p>In this assignment, you are tasked with developing a simple but engaging game using Python.</p>
+<p>The game is called the <strong>“Triple Combo Game”</strong>, where players select numbers from a pool to build an array and earn points by forming consecutive triplets of the same number. The game will test your understanding of basic Python programming concepts such as loops, conditionals, user input, and list operations.</p>
+</section>
+<section id="Background">
+<h2>Background<a class="headerlink" href="#Background" title="Link to this heading">#</a></h2>
+<p>The Triple Combo Game is a straightforward yet challenging game where players need to strategically select numbers from a given pool to form sequences of three identical numbers in an array. Each time a triplet is formed, it is removed from the array, and the player earns a point. The game continues until the array reaches a predefined maximum length.</p>
+</section>
+<section id="Objectives">
+<h2>Objectives<a class="headerlink" href="#Objectives" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Game Initialization</strong>:</p>
+<ul class="simple">
+<li><p>Initialize a pool of random numbers that players can choose from.</p></li>
+<li><p>Define an array where the chosen numbers will be stored.</p></li>
+<li><p>Set up a scoring system to track the player’s points.</p></li>
+</ul>
+</li>
+<li><p><strong>Gameplay Mechanics</strong>:</p>
+<ul class="simple">
+<li><p>Display the current state of the array and the available pool of numbers to the player.</p></li>
+<li><p>Allow the player to select a number from the pool and add it to the array.</p></li>
+<li><p>Check for any consecutive triplets of the same number in the array. If found, remove them and update the score.</p></li>
+<li><p>Ensure the game continues until the array reaches its maximum length.</p></li>
+</ul>
+</li>
+<li><p><strong>User Interaction</strong>:</p>
+<ul class="simple">
+<li><p>Prompt the player for input and validate the input to ensure it is a number from the pool.</p></li>
+<li><p>Provide feedback to the player, including their current score, the state of the array, and the available pool of numbers.</p></li>
+<li><p>End the game when the array reaches its maximum length and display the final score.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="Deliverables">
+<h2>Deliverables<a class="headerlink" href="#Deliverables" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>A Python script that implements the Triple Combo Game with the above-described functionality.</p></li>
+<li><p>Clear and concise comments in the code explaining the logic and flow of the game.</p></li>
+<li><p>User-friendly prompts and messages to enhance the player’s experience.</p></li>
+</ul>
+<blockquote>
+<div><p>Download <code class="docutils literal notranslate"><span class="pre">assignment1.py</span></code> script from <a class="reference external" href="https://github.com/Tptrix29/py-tutorials/assignment1.py">here</a> to review and complete game logic.</p>
+</div></blockquote>
+</section>
+<section id="Example">
+<h2>Example<a class="headerlink" href="#Example" title="Link to this heading">#</a></h2>
+<p><img alt="ass1" src="../_images/assignment1-example.jpg" /></p>
+<p>Good luck, and enjoy coding your Triple Combo Game!</p>
+</section>
 </section>
 
 
@@ -365,6 +431,25 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Problem-Description">Problem Description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Objectives">Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Deliverables">Deliverables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Example">Example</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
