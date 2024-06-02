@@ -6,7 +6,7 @@ Assignments
    :maxdepth: 2
    :caption: Contents
 
-   environment-setup.ipynb
+   environment-setup.md
    combo-game.ipynb
    wrapping-practice.ipynb
    data-project.ipynb
