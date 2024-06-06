@@ -1,4 +1,3 @@
-(get-started) = 
 # Get Started
 
 ## Classical Python
@@ -64,6 +63,25 @@ Anaconda is a distribution of Python that includes many pre-installed packages a
 2. Run the installer and follow the instructions.
 3. Launch Anaconda Navigator to manage environments and packages visually.
 
+#### Practice
+Basic operations with Anaconda management:
+
+```bash
+# Create a new environment
+conda create -n [env-name] python=3.8
+# Activate the environment
+conda activate [env-name]
+# Locate the environment
+conda env list
+# Install a package
+conda install [package-name]
+# List installed packages
+conda list
+# Deactivate the environment
+conda deactivate
+# Remove the environment
+conda remove -n [env-name] --all
+```
 ### Miniconda
 
 Miniconda is a **lighter version** of Anaconda with just the essential packages. 

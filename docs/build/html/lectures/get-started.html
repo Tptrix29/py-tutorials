@@ -330,7 +330,10 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conda">Conda</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda">Anaconda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda">Anaconda</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#practice">Practice</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#miniconda">Miniconda</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mamba">Mamba</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
@@ -358,8 +361,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>(get-started) =</p>
-<section class="tex2jax_ignore mathjax_ignore" id="get-started">
+  <section class="tex2jax_ignore mathjax_ignore" id="get-started">
 <h1>Get Started<a class="headerlink" href="#get-started" title="Link to this heading">#</a></h1>
 <section id="classical-python">
 <h2>Classical Python<a class="headerlink" href="#classical-python" title="Link to this heading">#</a></h2>
@@ -419,6 +421,26 @@ document.write(`
 <li><p>Run the installer and follow the instructions.</p></li>
 <li><p>Launch Anaconda Navigator to manage environments and packages visually.</p></li>
 </ol>
+<section id="practice">
+<h4>Practice<a class="headerlink" href="#practice" title="Link to this heading">#</a></h4>
+<p>Basic operations with Anaconda management:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a new environment</span>
+conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span><span class="o">[</span>env-name<span class="o">]</span><span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.8
+<span class="c1"># Activate the environment</span>
+conda<span class="w"> </span>activate<span class="w"> </span><span class="o">[</span>env-name<span class="o">]</span>
+<span class="c1"># Locate the environment</span>
+conda<span class="w"> </span>env<span class="w"> </span>list
+<span class="c1"># Install a package</span>
+conda<span class="w"> </span>install<span class="w"> </span><span class="o">[</span>package-name<span class="o">]</span>
+<span class="c1"># List installed packages</span>
+conda<span class="w"> </span>list
+<span class="c1"># Deactivate the environment</span>
+conda<span class="w"> </span>deactivate
+<span class="c1"># Remove the environment</span>
+conda<span class="w"> </span>remove<span class="w"> </span>-n<span class="w"> </span><span class="o">[</span>env-name<span class="o">]</span><span class="w"> </span>--all
+</pre></div>
+</div>
+</section>
 </section>
 <section id="miniconda">
 <h3>Miniconda<a class="headerlink" href="#miniconda" title="Link to this heading">#</a></h3>
@@ -556,7 +578,10 @@ jupyter<span class="w"> </span>contrib<span class="w"> </span>nbextension<span c
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conda">Conda</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda">Anaconda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda">Anaconda</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#practice">Practice</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#miniconda">Miniconda</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mamba">Mamba</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
