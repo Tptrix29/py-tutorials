@@ -89,7 +89,9 @@ html_theme_options = {
     "repository_url": "https://github.com/Tptrix29/py-tutorials",
     "use_repository_button": True,
     "show_navbar_depth": 2,
-    "max_navbar_depth": 4,
+    "show_toc_level": 2,
+    "max_navbar_depth": 3,
+    'home_page_in_toc': True,
     "collapse_navbar": True,
     "toc_title": "Contents"
 }

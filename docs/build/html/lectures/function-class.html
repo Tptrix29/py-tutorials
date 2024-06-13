@@ -152,6 +152,14 @@
  </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Welcome to Python Tutorials!
+                </a>
+            </li>
+        </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Lecture Notes</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -326,21 +334,21 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Function">Function</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Function">Function</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Definition-with-def-keyword">Definition with <code class="docutils literal notranslate"><span class="pre">def</span></code> keyword</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Local-&amp;-Global-Variables">Local &amp; Global Variables</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#global-keyword"><code class="docutils literal notranslate"><span class="pre">global</span></code> keyword</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Strict-Definition-(Optional)">Strict Definition (Optional)</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Class">Class</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Class">Class</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Definition">Definition</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Example">Example</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Objected-Oriented-Programming-with-Python-(Advanced)">Objected-Oriented Programming with Python (Advanced)</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#Inheritance">Inheritance</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#Abstract-Class">Abstract Class</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#OOP-with-Python-(Advanced)">OOP with Python (Advanced)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Inheritance">Inheritance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Abstract-Class">Abstract Class</a></li>
 </ul>
 </li>
 </ul>
@@ -364,7 +372,7 @@ document.write(`
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span>
 </pre></div>
 </div>
@@ -380,7 +388,7 @@ document.write(`
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;global&quot;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;global&quot;</span>
 
 <span class="k">def</span> <span class="nf">my_function</span><span class="p">():</span>
     <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;local&quot;</span>
@@ -408,7 +416,7 @@ global
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
 
 <span class="k">def</span> <span class="nf">modify_global</span><span class="p">():</span>
     <span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>
@@ -430,7 +438,7 @@ global
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># Global variable</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># Global variable</span>
 
 <span class="k">def</span> <span class="nf">modify_global</span><span class="p">():</span>
     <span class="k">global</span> <span class="n">x</span>  <span class="c1"># Declare x as global</span>
@@ -456,7 +464,7 @@ global
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add_numbers</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add_numbers</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
     <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 
 <span class="n">result</span> <span class="o">=</span> <span class="n">add_numbers</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>  <span class="c1"># Output: 8</span>
@@ -503,7 +511,7 @@ global
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
     <span class="c1"># static variable declaration</span>
     <span class="n">static_str</span> <span class="o">=</span> <span class="s2">&quot;I am a static variable&quot;</span>
 
@@ -534,7 +542,7 @@ global
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="n">obj1</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">obj1</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
 <span class="n">obj2</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">([</span><span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">obj1</span><span class="o">.</span><span class="n">get_val</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">obj2</span><span class="o">.</span><span class="n">get_val</span><span class="p">())</span>
@@ -554,7 +562,7 @@ global
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="n">MyClass</span><span class="o">.</span><span class="n">modify_static_variable</span><span class="p">(</span><span class="s2">&quot;I am a new static variable&quot;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">MyClass</span><span class="o">.</span><span class="n">modify_static_variable</span><span class="p">(</span><span class="s2">&quot;I am a new static variable&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">MyClass</span><span class="o">.</span><span class="n">static_str</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -571,7 +579,7 @@ I am a new static variable
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">obj1</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">obj1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -588,7 +596,7 @@ I am a new static variable
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">obj1</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">obj1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -601,17 +609,28 @@ Value: 1, 2
 </pre></div></div>
 </div>
 </section>
-<section id="Objected-Oriented-Programming-with-Python-(Advanced)">
-<h3>Objected-Oriented Programming with Python (Advanced)<a class="headerlink" href="#Objected-Oriented-Programming-with-Python-(Advanced)" title="Link to this heading">#</a></h3>
+</section>
+<section id="OOP-with-Python-(Advanced)">
+<h2>OOP with Python (Advanced)<a class="headerlink" href="#OOP-with-Python-(Advanced)" title="Link to this heading">#</a></h2>
+<p>Object-oriented programming (OOP) is a programming paradigm based on the concept of “objects,” which are instances of classes. These objects can contain data, in the form of fields (often known as attributes or properties), and code, in the form of methods (functions or procedures).</p>
+<p>Here are the core concepts of OOP:</p>
+<ol class="arabic simple">
+<li><p><strong>Encapsulation</strong>: The bundling of data (attributes) and methods that operate on that data into a single unit.</p></li>
+<li><p><strong>Inheritance</strong>: The mechanism by which one class acquires the properties and behavior of another class.</p></li>
+<li><p><strong>Polymorphism</strong>: The ability to present the same interface for different data types</p></li>
+</ol>
+<blockquote>
+<div><p><strong>Abstraction</strong>: The concept of hiding the internal implementation details and showing only the necessary features of an object.</p>
+</div></blockquote>
 <section id="Inheritance">
-<h4>Inheritance<a class="headerlink" href="#Inheritance" title="Link to this heading">#</a></h4>
+<h3>Inheritance<a class="headerlink" href="#Inheritance" title="Link to this heading">#</a></h3>
 <p>Inheritance allows a class to inherit attributes and methods from another class. The class that inherits is called the child class, and the class being inherited from is the parent class.</p>
 <p>Child class could <strong>override</strong> the methods of the parent class and define new methods.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Parent</span><span class="p">:</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Parent</span><span class="p">:</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
 
@@ -636,7 +655,7 @@ Value: 1, 2
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="n">parent</span> <span class="o">=</span> <span class="n">Parent</span><span class="p">(</span><span class="s2">&quot;Jake&quot;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">parent</span> <span class="o">=</span> <span class="n">Parent</span><span class="p">(</span><span class="s2">&quot;Jake&quot;</span><span class="p">)</span>
 <span class="n">child</span> <span class="o">=</span> <span class="n">Child</span><span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">parent</span><span class="o">.</span><span class="n">speak</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">child</span><span class="o">.</span><span class="n">speak</span><span class="p">())</span>
@@ -656,13 +675,13 @@ I am Alice, and I am 10 years old.
 </div>
 </section>
 <section id="Abstract-Class">
-<h4>Abstract Class<a class="headerlink" href="#Abstract-Class" title="Link to this heading">#</a></h4>
+<h3>Abstract Class<a class="headerlink" href="#Abstract-Class" title="Link to this heading">#</a></h3>
 <p>An abstract class is a class that cannot be instantiated and is meant to be subclassed. It can have abstract methods, which are methods declared without implementation. Abstract classes are defined using the abc module.</p>
-<div class="nbinput docutils container">
+<div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abc</span> <span class="kn">import</span> <span class="n">ABC</span><span class="p">,</span> <span class="n">abstractmethod</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abc</span> <span class="kn">import</span> <span class="n">ABC</span><span class="p">,</span> <span class="n">abstractmethod</span>
 
 <span class="k">class</span> <span class="nc">Animal</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
     <span class="nd">@abstractmethod</span>
@@ -676,11 +695,15 @@ I am Alice, and I am 10 years old.
 <span class="k">class</span> <span class="nc">Cat</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">make_sound</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="s2">&quot;Meow!&quot;</span>
-
-<span class="n">dog</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dog</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">dog</span><span class="o">.</span><span class="n">make_sound</span><span class="p">())</span>
-<span class="n">cat</span> <span class="o">=</span> <span class="n">Cat</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">cat</span><span class="o">.</span><span class="n">make_sound</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
@@ -690,10 +713,25 @@ I am Alice, and I am 10 years old.
 <div class="output_area docutils container">
 <div class="highlight"><pre>
 Woof!
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="o">=</span> <span class="n">Cat</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cat</span><span class="o">.</span><span class="n">make_sound</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
 Meow!
 </pre></div></div>
 </div>
-</section>
 </section>
 </section>
 </section>
@@ -743,21 +781,21 @@ Meow!
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Function">Function</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Function">Function</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Definition-with-def-keyword">Definition with <code class="docutils literal notranslate"><span class="pre">def</span></code> keyword</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Local-&amp;-Global-Variables">Local &amp; Global Variables</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#global-keyword"><code class="docutils literal notranslate"><span class="pre">global</span></code> keyword</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Strict-Definition-(Optional)">Strict Definition (Optional)</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Class">Class</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Class">Class</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Definition">Definition</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Example">Example</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Objected-Oriented-Programming-with-Python-(Advanced)">Objected-Oriented Programming with Python (Advanced)</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#Inheritance">Inheritance</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#Abstract-Class">Abstract Class</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#OOP-with-Python-(Advanced)">OOP with Python (Advanced)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Inheritance">Inheritance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Abstract-Class">Abstract Class</a></li>
 </ul>
 </li>
 </ul>
