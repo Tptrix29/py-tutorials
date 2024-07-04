@@ -6,12 +6,12 @@ import random
 class TripleComboGame:
     def __init__(self, arr_len=5, pool_range=9):
         """Initialize the game with default values"""
-        self.arr_len = arr_len
-        self.pool_range = pool_range
-        self.flag = True
-        self.score = 0
-        self.arr = []
-        self.pool = random.choices([i + 1 for i in range(pool_range)], k=pool_range)
+        self.arr_len: int = arr_len
+        self.pool_range: int = pool_range
+        self.flag: bool = True
+        self.score: int = 0
+        self.arr: list[int] = []
+        self.pool: list[int] = random.choices([i + 1 for i in range(pool_range)], k=pool_range)
 
     def welcome(self):
         """Display the welcome message"""
