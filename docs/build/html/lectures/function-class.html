@@ -368,6 +368,13 @@ document.write(`
 <h2>Function<a class="headerlink" href="#Function" title="Link to this heading">#</a></h2>
 <section id="Definition-with-def-keyword">
 <h3>Definition with <code class="docutils literal notranslate"><span class="pre">def</span></code> keyword<a class="headerlink" href="#Definition-with-def-keyword" title="Link to this heading">#</a></h3>
+<p>Format:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">function_name</span><span class="p">(</span><span class="n">param1</span><span class="p">,</span> <span class="n">param2</span><span class="p">,</span> <span class="o">...</span><span class="p">):</span>
+    <span class="c1"># code block</span>
+    <span class="k">return</span> <span class="n">value</span>    <span class="c1"># optional</span>
+</pre></div>
+</div>
+<p>All input parameters are local variable in the function, so the function will return <code class="docutils literal notranslate"><span class="pre">None</span></code> if you don’t specify a return value.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -460,6 +467,7 @@ global
 </section>
 <section id="Strict-Definition-(Optional)">
 <h3>Strict Definition (Optional)<a class="headerlink" href="#Strict-Definition-(Optional)" title="Link to this heading">#</a></h3>
+<p>Format: ```python def function_name(param1: type, param2: type, …) -&gt; return_type: # code block return value # optional</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
